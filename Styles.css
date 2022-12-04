@@ -1,0 +1,234 @@
+body {
+    font-family: 'Bai Jamjuree', sans-serif;
+    background-color: white;
+    text-align: center;
+    margin: 0;
+    color: hsl(210, 10%, 33%);
+}
+.box1 {
+    background-image: url(./images/bg-header-desktop.png);
+    background-repeat: no-repeat;
+    padding: 8rem 24rem 5rem;
+}
+.box1 h1 {
+    font-size: 2.25rem;
+}
+button{
+    padding: 1rem 3rem;
+    border: none;
+    border-radius: 2rem;
+    color: white;
+}
+button:hover {
+    cursor: pointer;
+}
+.btn1 {
+    background-color: hsl(171, 66%, 44%);
+    margin: 1rem 0.5rem;
+}
+.btn2{
+    background-color: hsl(233, 100%, 69%);
+    margin: 1rem 0.5rem;
+}
+.box2 {
+    padding: 0 23rem 5rem;
+}
+h2 {
+    font-size: 2rem;
+}
+h3 {
+    font-size: 1.5rem;
+}
+.box3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0 0 7rem;
+}
+.box3 img{
+    float: left;
+    position: relative;
+    right: 2rem;
+}
+.features {
+    padding: 2rem 10rem 3rem 5rem;
+}
+.features div {
+    text-align: left;
+    padding: 1rem 0;
+}
+.features h3 {
+    margin: 0;
+}
+.box4 p {
+    padding: 0 22rem 5rem;
+}
+.features2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 6rem;
+    grid-gap: 3rem;
+}
+.box6 {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    padding: 0 6rem 5rem;
+    grid-gap: 6rem;
+}
+.box7 {
+    padding: 0 22rem 6rem;
+}
+.box8 {
+    background-color: hsl(202, 11%, 95%);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    height: 8rem;
+    align-items: center;
+    justify-items: center;
+}
+.footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: left;
+    align-items: center;
+    height: 5rem;
+    grid-gap: 0 4rem;
+}
+.logo {
+    width: 3rem;
+}
+.sm {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1rem;
+}
+span:hover{
+    cursor: pointer;
+    color: hsl(171, 66%, 44%);
+}
+.sm img:hover {
+    cursor: pointer;
+    color: hsl(171, 66%, 44%);
+}
+/*common stylse*/
+@media (min-width:500px) and (max-width:1300px) {
+    .box1{
+        padding: 8rem 5rem 5rem;
+    }
+    .box2{
+        padding: 0 5rem 5rem;
+    }
+    .box3{
+        display: unset;
+    }
+    .box3 img {
+        position: unset;
+        float: unset;
+    }
+    .box4 p {
+        padding: 0 5rem 5rem;
+    }
+    .box7 {
+        padding: 0 5rem 6rem;
+    }
+    .features div {
+        text-align: center;
+    }
+    .features {
+        padding: 2rem 5rem 5rem;
+    }
+}
+@media (min-width:1024px) and (max-width:1300px) {
+    .box6 {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .footer {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media (min-width:768px) and (max-width:1024px) {
+    .box6 {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .box4 img {
+        max-width: 100%;
+    }
+    .footer {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media (min-width:500px) and (max-width:768px) {
+    .box3 img {
+        max-width: 100%;
+    }
+    .box6 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .box4 img {
+        max-width: 100%;
+    }
+    .features2{
+        grid-template-columns: 1fr 1fr;
+    }
+    .footer {
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+}
+@media (max-width:500px) {
+    .box1{
+        padding: 8rem 0.5rem 5rem;
+    }
+    .box2{
+        padding: 0 0.55rem 5rem;
+    }
+    .box3{
+        display: unset;
+    }
+    .box3 img {
+        position: unset;
+        float: unset;
+        max-width: 100%;
+    }
+    .box4 p {
+        padding: 0 0.5rem 5rem;
+    }
+    .box6 {
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+    .box7 {
+        padding: 0 0.5rem 6rem;
+    }
+    .box4 img {
+        max-width: 100%;
+    }
+    .features2{
+        grid-template-columns: 1fr;
+        padding: 0.5rem;
+    }
+    .features div {
+        text-align: center;
+    }
+    .features {
+        padding: 2rem 0.5rem 5rem;
+    }
+    .footer {
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+    .box8 {
+        grid-template-columns: 1fr;
+        grid-gap: 1rem;
+        height: 15rem;
+    }
+    button{
+        padding: 1rem 0rem;
+        width: 100%;
+    }
+    .btn1{
+        margin: 1rem 0rem;
+    }
+    .btn2{
+        margin: 1rem 0rem;
+    }
+}
